@@ -5,13 +5,7 @@ using namespace std;
 class Square
 {
 public:
-    Square(double a, double b, double c)
-    {
-        this -> a = a;
-        this -> b = a;
-        this -> c = a;
-
-    }
+    Square(double a, double b, double c) : a(a), b(b), c(c){};
     virtual void print_square() = 0;
 protected:
     double a;
